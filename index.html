@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mi Página Web - Versión Modificada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: square;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,7 +53,7 @@
     </header>
     
     <section>
-        <p>Este es un párrafo de ejemplo para mostrar cómo funciona el HTML. Aquí puedes incluir cualquier contenido que desees compartir con los visitantes.</p>
+        <p>Este es un párrafo de ejemplo con un diseño básico en HTML . Aquí puedes incluir cualquier contenido que desees compartir con los visitantes.</p>
         
         <h2>Lista de Cosas que Me Gustan</h2>
         <ul>
@@ -20,10 +62,23 @@
             <li>Escuchar música</li>
             <li>Viajar</li>
         </ul>
-    </section>
+
+        <h2>Contacto</h2>
+        <form action="mail:andreshidalgo@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Tu Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Tu Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        
+   </section>
 
     <footer>
         <p>&copy; 2025 Mi Página Web</p>
     </footer>
 </body>
 </html>
+
